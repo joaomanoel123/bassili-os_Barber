@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img">
+
+<defs>
+  <filter id="grain-g2" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="table" tableValues="0 0.18"/></feComponentTransfer>
+  </filter>
+  <radialGradient id="spot-g2" cx="62%" cy="38%" r="70%">
+    <stop offset="0" stop-color="#6a6a6a"/>
+    <stop offset="0.45" stop-color="#2a2a2a"/>
+    <stop offset="1" stop-color="#0d0d0d"/>
+  </radialGradient>
+</defs>
+<rect width="1000" height="1000" fill="url(#spot-g2)"/>
+
+  <g stroke="#e9e6e0" stroke-width="3" fill="#161616" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 620 Q500 520 760 360 L790 410 Q540 600 270 700 Z"/>
+    <path d="M250 620 L190 760 Q210 800 260 780 L290 700" />
+  </g>
+  <path d="M260 880 H740" stroke="#C4A166" stroke-width="2"/>
+<rect width="1000" height="1000" filter="url(#grain-g2)"/>
+</svg>

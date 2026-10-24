@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img">
+
+<defs>
+  <filter id="grain-g4" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="table" tableValues="0 0.18"/></feComponentTransfer>
+  </filter>
+  <radialGradient id="spot-g4" cx="62%" cy="38%" r="70%">
+    <stop offset="0" stop-color="#6a6a6a"/>
+    <stop offset="0.45" stop-color="#2a2a2a"/>
+    <stop offset="1" stop-color="#0d0d0d"/>
+  </radialGradient>
+</defs>
+<rect width="1000" height="1000" fill="url(#spot-g4)"/>
+
+<g transform="translate(500 500) scale(1.4)" fill="none" stroke="#e9e6e0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+  <path d="M-150 40 Q-160 -120 -90 -150 L90 -150 Q160 -120 150 40 Z" fill="#161616"/>
+  <rect x="-170" y="40" width="340" height="60" rx="10" fill="#1b1b1b"/>
+  <path d="M-170 70 H-215 V-10" />
+  <path d="M170 70 H215 V-10" />
+  <path d="M-130 100 L-150 190 M130 100 L150 190" />
+  <rect x="-18" y="100" width="36" height="150" fill="#121212"/>
+  <path d="M-120 250 H120 L90 285 H-90 Z" fill="#161616"/>
+  <path d="M-90 -150 V-215 H90 V-150" fill="#161616"/>
+</g><path d="M260 930 H740" stroke="#C4A166" stroke-width="2"/>
+<rect width="1000" height="1000" filter="url(#grain-g4)"/>
+</svg>
